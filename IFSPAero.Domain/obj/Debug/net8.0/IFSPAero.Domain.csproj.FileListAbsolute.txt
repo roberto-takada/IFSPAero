@@ -1,0 +1,12 @@
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/bin/Debug/net8.0/IFSPAero.Domain.deps.json
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/bin/Debug/net8.0/IFSPAero.Domain.dll
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/bin/Debug/net8.0/IFSPAero.Domain.pdb
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.csproj.AssemblyReference.cache
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.AssemblyInfoInputs.cache
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.AssemblyInfo.cs
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.csproj.CoreCompileInputs.cache
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.dll
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/refint/IFSPAero.Domain.dll
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/IFSPAero.Domain.pdb
+/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/obj/Debug/net8.0/ref/IFSPAero.Domain.dll

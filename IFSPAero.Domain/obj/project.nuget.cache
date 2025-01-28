@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9X6M5iwhEzo=",
+  "success": true,
+  "projectFilePath": "/home/cairim/Downloads/IFSPAero/IFSPAero.Domain/IFSPAero.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/cairim/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

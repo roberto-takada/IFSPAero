@@ -1,0 +1,41 @@
+using System.Data.Common;
+using IFSPAero.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using IFSPAero.Repository.Mapping;
+
+namespace IFSPAero.Repository.Context
+{
+    public sealed class MySqlContext : DbContext
+    {
+        public MySqlContext(DbContextOptions<MySqlContext> options) : base(options)
+        {
+            Database.EnsureCreated();
+        }
+        
+        public DbSet<Aeroporto> Aeroportos { get; set; }
+        public DbSet<Companhia> Companhias { get; set; }
+        public DbSet<Funcao> Funcoes { get; set; }
+        public DbSet<Hangar> Hangares { get; set; }
+        public DbSet<Aviao> Avioes { get; set; }
+        public DbSet<TipoVoo> TipoVoos { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<AviaoEstacionado> AviaoEstacionados { get; set; }
+        public DbSet<Voo> Voos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Aeroporto>(new AeroportoMap().Configure);
+            modelBuilder.Entity<Companhia>(new CompanhiaMap().Configure);
+            modelBuilder.Entity<Funcao>(new FuncaoMap().Configure);
+            modelBuilder.Entity<Hangar>(new HangarMap().Configure);
+            modelBuilder.Entity<Aviao>(new AviaoMap().Configure);
+            modelBuilder.Entity<TipoVoo>(new TipoVooMap().Configure);
+            modelBuilder.Entity<Funcionario>(new FuncionarioMap().Configure);
+            modelBuilder.Entity<AviaoEstacionado>(new AviaoEstacionadoMap().Configure);
+            modelBuilder.Entity<Voo>(new VooMap().Configure);
+
+        }
+    }
+}
+
