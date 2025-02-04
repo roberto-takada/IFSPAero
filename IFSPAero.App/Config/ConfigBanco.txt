@@ -1,1 +1,1 @@
-Server=localhost;port=3306;Database=mydb;Uid=root;Pwd=123a
+NãotemnadaAqui :D
