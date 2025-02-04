@@ -12,15 +12,15 @@ namespace IFSPAero.Repository.Context
             Database.EnsureCreated();
         }
         
-        public DbSet<Aeroporto> Aeroportos { get; set; }
-        public DbSet<Companhia> Companhias { get; set; }
-        public DbSet<Funcao> Funcoes { get; set; }
-        public DbSet<Hangar> Hangares { get; set; }
-        public DbSet<Aviao> Avioes { get; set; }
-        public DbSet<TipoVoo> TipoVoos { get; set; }
-        public DbSet<Funcionario> Funcionarios { get; set; }
-        public DbSet<AviaoEstacionado> AviaoEstacionados { get; set; }
-        public DbSet<Voo> Voos { get; set; }
+        public DbSet<Aeroporto> Aeroporto { get; set; }
+        public DbSet<Companhia> Companhia { get; set; }
+        public DbSet<Funcao> Funcao { get; set; }
+        public DbSet<Hangar> Hangar { get; set; }
+        public DbSet<Aviao> Aviao { get; set; }
+        public DbSet<TipoVoo> TipoVoo { get; set; }
+        public DbSet<Funcionario> Funcionario { get; set; }
+        public DbSet<AviaoEstacionado> AviaoEstacionado { get; set; }
+        public DbSet<Voo> Voo { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

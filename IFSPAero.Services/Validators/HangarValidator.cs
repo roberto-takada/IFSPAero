@@ -8,8 +8,8 @@ namespace IFSPAero.Services.Validators
         public HangarValidator()
         {
             RuleFor(c => c.Codigo)
-                .NotEmpty().WithMessage("Por favor digite o código da Função.")
-                .NotNull().WithMessage("Por favor digite o código da Função.");
+                .NotEmpty().WithMessage("Por favor digite o código do Hangar.")
+                .NotNull().WithMessage("Por favor digite o código do Hangar.");
         }
     }
 }
