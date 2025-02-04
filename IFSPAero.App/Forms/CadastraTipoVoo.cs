@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using IFSPAero.App.FormBase;
-using IFSPAero.App.Models;
+﻿using IFSPAero.App.FormBase;
 using IFSPAero.Domain.Base;
 using IFSPAero.Domain.Entities;
 using IFSPAero.Services.Validators;
@@ -18,7 +8,7 @@ namespace IFSPAero.App.Forms
     public partial class CadastraTipoVoo : CadastroBase
     {
         private IBaseService<TipoVoo> _tipoVooService;
-        private List<TipoVooModel> tipoVoos;
+        private List<TipoVoo> tipoVoos;
         public CadastraTipoVoo(IBaseService<TipoVoo> tipoVoo)
         {
             _tipoVooService = tipoVoo;
@@ -72,9 +62,8 @@ namespace IFSPAero.App.Forms
 
         protected override void CarregaGrid()
         {
-            tipoVoos = _tipoVooService.Get<TipoVooModel>().ToList();
+            tipoVoos = _tipoVooService.Get<TipoVoo>().ToList();
             dataGridViewConsulta.DataSource = tipoVoos;
-            dataGridViewConsulta.Columns["Tipo"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)

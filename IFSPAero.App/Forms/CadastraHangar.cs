@@ -19,7 +19,7 @@ namespace IFSPAero.App.Forms
     {
         private IBaseService<Hangar> _hangarService;
         private IBaseService<Aeroporto> _aeroportoService;
-        private List<HangarModel>? _hangares;
+        private List<HangarModel> _hangares;
         public CadastraHangar(IBaseService<Hangar> hangarService, IBaseService<Aeroporto> aeroportoService)
         {
             _hangarService = hangarService;
@@ -68,7 +68,7 @@ namespace IFSPAero.App.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, @"IFSPAERO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Deu Erro aqui", @"IFSPAERO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -86,7 +86,7 @@ namespace IFSPAero.App.Forms
 
         protected override void CarregaGrid()
         {
-            _hangares = _hangarService.Get<HangarModel>(false, new[] {"Aeroporto"}).ToList();
+            _hangares = _hangarService.Get<HangarModel>().ToList();
             dataGridViewConsulta.DataSource = _hangares;
             dataGridViewConsulta.Columns["Codigo"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewConsulta.Columns["IdAeroporto"]!.Visible = false;

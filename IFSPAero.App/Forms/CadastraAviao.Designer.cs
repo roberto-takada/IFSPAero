@@ -50,6 +50,9 @@
             tabPageCadastro.Controls.Add(txtBoxModelo);
             tabPageCadastro.Controls.Add(btnEnviaImagem);
             tabPageCadastro.Controls.Add(imgAviao);
+            tabPageCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Padding = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Size = new Size(904, 480);
             tabPageCadastro.Controls.SetChildIndex(btnConfirmar, 0);
             tabPageCadastro.Controls.SetChildIndex(btnCancelar, 0);
             tabPageCadastro.Controls.SetChildIndex(imgAviao, 0);
@@ -60,11 +63,48 @@
             tabPageCadastro.Controls.SetChildIndex(txtBoxId, 0);
             tabPageCadastro.Controls.SetChildIndex(txtSituacao, 0);
             // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(808, 432);
+            btnConfirmar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabPageConsulta
+            // 
+            tabPageConsulta.Margin = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Padding = new Padding(3, 5, 3, 5);
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(673, 432);
+            btnCancelar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(594, 428);
+            btnExcluir.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.Location = new Point(708, 428);
+            btnAlterar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnNovo
+            // 
+            btnNovo.Location = new Point(829, 428);
+            btnNovo.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabControlCadastro
+            // 
+            tabControlCadastro.Location = new Point(3, 113);
+            tabControlCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabControlCadastro.Size = new Size(912, 513);
+            // 
             // imgAviao
             // 
-            imgAviao.Location = new Point(6, 6);
+            imgAviao.Location = new Point(7, 8);
+            imgAviao.Margin = new Padding(3, 4, 3, 4);
             imgAviao.Name = "imgAviao";
-            imgAviao.Size = new Size(211, 205);
+            imgAviao.Size = new Size(241, 273);
             imgAviao.SizeMode = PictureBoxSizeMode.StretchImage;
             imgAviao.TabIndex = 2;
             imgAviao.TabStop = false;
@@ -77,8 +117,8 @@
             btnEnviaImagem.HighEmphasis = true;
             btnEnviaImagem.Icon = null;
             btnEnviaImagem.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnEnviaImagem.Location = new Point(31, 220);
-            btnEnviaImagem.Margin = new Padding(4, 6, 4, 6);
+            btnEnviaImagem.Location = new Point(35, 293);
+            btnEnviaImagem.Margin = new Padding(5, 8, 5, 8);
             btnEnviaImagem.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             btnEnviaImagem.Name = "btnEnviaImagem";
             btnEnviaImagem.NoAccentTextColor = Color.Empty;
@@ -102,7 +142,8 @@
             txtBoxModelo.HideSelection = true;
             txtBoxModelo.Hint = "Modelo do Avião";
             txtBoxModelo.LeadingIcon = null;
-            txtBoxModelo.Location = new Point(234, 81);
+            txtBoxModelo.Location = new Point(267, 108);
+            txtBoxModelo.Margin = new Padding(3, 4, 3, 4);
             txtBoxModelo.MaxLength = 32767;
             txtBoxModelo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxModelo.Name = "txtBoxModelo";
@@ -114,7 +155,7 @@
             txtBoxModelo.SelectionLength = 0;
             txtBoxModelo.SelectionStart = 0;
             txtBoxModelo.ShortcutsEnabled = true;
-            txtBoxModelo.Size = new Size(289, 48);
+            txtBoxModelo.Size = new Size(330, 48);
             txtBoxModelo.TabIndex = 4;
             txtBoxModelo.TabStop = false;
             txtBoxModelo.TextAlign = HorizontalAlignment.Left;
@@ -133,7 +174,8 @@
             txtBoxCodigo.HideSelection = true;
             txtBoxCodigo.Hint = "Código do Avião";
             txtBoxCodigo.LeadingIcon = null;
-            txtBoxCodigo.Location = new Point(234, 18);
+            txtBoxCodigo.Location = new Point(267, 24);
+            txtBoxCodigo.Margin = new Padding(3, 4, 3, 4);
             txtBoxCodigo.MaxLength = 32767;
             txtBoxCodigo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxCodigo.Name = "txtBoxCodigo";
@@ -145,7 +187,7 @@
             txtBoxCodigo.SelectionLength = 0;
             txtBoxCodigo.SelectionStart = 0;
             txtBoxCodigo.ShortcutsEnabled = true;
-            txtBoxCodigo.Size = new Size(289, 48);
+            txtBoxCodigo.Size = new Size(330, 48);
             txtBoxCodigo.TabIndex = 5;
             txtBoxCodigo.TabStop = false;
             txtBoxCodigo.TextAlign = HorizontalAlignment.Left;
@@ -167,11 +209,12 @@
             cboCompanhia.Hint = "Companhia";
             cboCompanhia.IntegralHeight = false;
             cboCompanhia.ItemHeight = 43;
-            cboCompanhia.Location = new Point(529, 81);
+            cboCompanhia.Location = new Point(605, 108);
+            cboCompanhia.Margin = new Padding(3, 4, 3, 4);
             cboCompanhia.MaxDropDownItems = 4;
             cboCompanhia.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             cboCompanhia.Name = "cboCompanhia";
-            cboCompanhia.Size = new Size(250, 49);
+            cboCompanhia.Size = new Size(285, 49);
             cboCompanhia.StartIndex = 0;
             cboCompanhia.TabIndex = 6;
             // 
@@ -187,7 +230,8 @@
             txtBoxId.HideSelection = true;
             txtBoxId.Hint = "ID";
             txtBoxId.LeadingIcon = null;
-            txtBoxId.Location = new Point(529, 18);
+            txtBoxId.Location = new Point(605, 24);
+            txtBoxId.Margin = new Padding(3, 4, 3, 4);
             txtBoxId.MaxLength = 32767;
             txtBoxId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxId.Name = "txtBoxId";
@@ -199,7 +243,7 @@
             txtBoxId.SelectionLength = 0;
             txtBoxId.SelectionStart = 0;
             txtBoxId.ShortcutsEnabled = true;
-            txtBoxId.Size = new Size(250, 48);
+            txtBoxId.Size = new Size(286, 48);
             txtBoxId.TabIndex = 7;
             txtBoxId.TabStop = false;
             txtBoxId.TextAlign = HorizontalAlignment.Left;
@@ -218,7 +262,8 @@
             txtSituacao.HideSelection = true;
             txtSituacao.Hint = "Situação";
             txtSituacao.LeadingIcon = null;
-            txtSituacao.Location = new Point(642, 136);
+            txtSituacao.Location = new Point(734, 181);
+            txtSituacao.Margin = new Padding(3, 4, 3, 4);
             txtSituacao.MaxLength = 32767;
             txtSituacao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtSituacao.Name = "txtSituacao";
@@ -230,7 +275,7 @@
             txtSituacao.SelectionLength = 0;
             txtSituacao.SelectionStart = 0;
             txtSituacao.ShortcutsEnabled = true;
-            txtSituacao.Size = new Size(137, 48);
+            txtSituacao.Size = new Size(157, 48);
             txtSituacao.TabIndex = 8;
             txtSituacao.TabStop = false;
             txtSituacao.TextAlign = HorizontalAlignment.Left;
@@ -239,12 +284,14 @@
             // 
             // CadastraAviao
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(918, 631);
             Location = new Point(0, 0);
+            Margin = new Padding(3, 5, 3, 5);
             Name = "CadastraAviao";
-            Text = "CadastraAviao";
+            Padding = new Padding(3, 113, 3, 5);
+            Text = "IFSPAero - Avião";
             tabPageCadastro.ResumeLayout(false);
             tabPageCadastro.PerformLayout();
             tabPageConsulta.ResumeLayout(false);
