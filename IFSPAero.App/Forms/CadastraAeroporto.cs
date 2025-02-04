@@ -67,7 +67,7 @@ namespace IFSPAero.App.Forms
         {
             aeroportos = _aeroportoService.Get<Aeroporto>().ToList();
             dataGridViewConsulta.DataSource = aeroportos;
-            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;            
         }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)

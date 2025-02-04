@@ -101,7 +101,6 @@ namespace IFSPAero.App.Forms
         {
             funcionarios = _funcionarioService.Get<FuncionarioModel>().ToList();
             dataGridViewConsulta.DataSource = funcionarios;
-            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewConsulta.Columns["IdFuncao"]!.Visible = false;
             dataGridViewConsulta.Columns["IdCompanhia"]!.Visible = false;
         }

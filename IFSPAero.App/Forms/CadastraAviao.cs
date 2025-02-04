@@ -89,7 +89,6 @@ namespace IFSPAero.App.Forms
         {
             avioes = _aviaoService.Get<AviaoModel>().ToList();
             dataGridViewConsulta.DataSource = avioes;
-            dataGridViewConsulta.Columns["Modelo"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewConsulta.Columns["Imagem"]!.Visible = false;
             dataGridViewConsulta.Columns["IdCompanhia"]!.Visible = false;
         }
@@ -119,10 +118,10 @@ namespace IFSPAero.App.Forms
 
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    
+
                     imageLocation = ofd.FileName;
                     imgAviao.ImageLocation = imageLocation;
-                    
+
                 }
             }
             catch

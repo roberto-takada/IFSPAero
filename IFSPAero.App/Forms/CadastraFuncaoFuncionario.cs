@@ -74,7 +74,6 @@ namespace IFSPAero.App.Forms
         {
             funcoes = _FuncaoService.Get<FuncaoModel>().ToList();
             dataGridViewConsulta.DataSource = funcoes;
-            dataGridViewConsulta.Columns["NomeFuncao"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)

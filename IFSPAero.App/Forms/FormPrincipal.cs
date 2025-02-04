@@ -23,24 +23,9 @@ namespace IFSPAero.App
             }
         }
 
-        private void aeroportoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cadastrarAeroportoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ExibeFormulario<CadastraAeroporto>();
-        }
-
-        private void consultarAeroportosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void aviãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void cadastrarCompanhiasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,24 +33,9 @@ namespace IFSPAero.App
             ExibeFormulario<CadastraCompanhia>();
         }
 
-        private void consultarCompanhiasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void funcionárioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cadastrarFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ExibeFormulario<CadastraFuncionario>();
-        }
-
-        private void consultarFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void cadastrarAviãoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -93,39 +63,17 @@ namespace IFSPAero.App
             ExibeFormulario<CadastraFuncaoFuncionario>();
         }
 
-        private void consultarFuncionáriosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void cadastrarTipoVôoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ExibeFormulario<CadastraTipoVoo>();
         }
 
-        private void consultarFuncõesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-
-        }
-
-        private void consultarAviãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarTipoVôoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarHangaresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void consultarEstacionamentoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            if (e.CloseReason == CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

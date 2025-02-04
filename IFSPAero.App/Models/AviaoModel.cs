@@ -14,6 +14,6 @@ namespace IFSPAero.App.Models
         public byte[] Imagem { get; set; }
         public int Situacao { get; set; }
         public int IdCompanhia { get; set; }
-        public int Companhia { get; set; }
+        public string Companhia { get; set; }
     }
 }

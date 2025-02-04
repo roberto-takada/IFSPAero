@@ -45,8 +45,8 @@ namespace IFSPAero.App.Forms
             cboCapitao.DataSource = _funcionarioService.Get<FuncionarioModel>().ToList();
 
             cboVoo.ValueMember = "Id";
-            cboVoo.DisplayMember = "TipoVoo";
-            cboVoo.DataSource = _tipoVooService.Get<TipoVoo>().ToList();
+            cboVoo.DisplayMember = "Tipo";
+            cboVoo.DataSource = _tipoVooService.Get<TipoVooModel>().ToList();
 
             cboAeroportoChegada.ValueMember = "Id";
             cboAeroportoChegada.DisplayMember = "Nome";
@@ -58,20 +58,34 @@ namespace IFSPAero.App.Forms
 
         }
 
-        private void PreencheObjeto(AviaoEstacionado aviaoEstacionado)
+        private void PreencheObjeto(Voo voo)
         {
-            aviaoEstacionado.DuracaoEstacionamento = txtBoxDuracao.Text;
-            aviaoEstacionado.ComecoEstacionamento = dateTimeComeco.Value;
-            aviaoEstacionado.FimEstacionamento = dateTimeFim.Value;
+            voo.DataChegada = dateTimeChegada.Value;
+            voo.DataSaida = dateTimeSaida.Value;
             if (int.TryParse(cboAviao.SelectedValue.ToString(), out var idAviao))
             {
                 var aviao = _aviaoService.GetById<Aviao>(idAviao);
-                aviaoEstacionado.Aviao = aviao;
+                voo.Aviao = aviao;
             }
-            if (int.TryParse(cboHangar.SelectedValue.ToString(), out var idHangar))
+            if (int.TryParse(cboCapitao.SelectedValue.ToString(), out var idFuncionario))
             {
-                var hangar = _hangarService.GetById<Hangar>(idHangar);
-                aviaoEstacionado.Hangar = hangar;
+                var capitao = _funcionarioService.GetById<Funcionario>(idFuncionario);
+                voo.Capitao = capitao;
+            }
+            if (int.TryParse(cboVoo.SelectedValue.ToString(), out var idTipoVoo))
+            {
+                var tipoVoo = _tipoVooService.GetById<TipoVoo>(idTipoVoo);
+                voo.TipoVoo = tipoVoo;
+            }
+            if (int.TryParse(cboAeroportoChegada.SelectedValue.ToString(), out var idAeroportoChegada))
+            {
+                var aeroportoChegada = _aeroportoService.GetById<Aeroporto>(idAeroportoChegada);
+                voo.AeroportoChegada = aeroportoChegada;
+            }
+            if (int.TryParse(cboAeroportoSaida.SelectedValue.ToString(), out var idAeroportoSaida))
+            {
+                var aeroportoSaida = _aeroportoService.GetById<Aeroporto>(idAeroportoSaida);
+                voo.AeroportoSaida = aeroportoSaida;
             }
         }
 
@@ -83,16 +97,16 @@ namespace IFSPAero.App.Forms
                 {
                     if (int.TryParse(txtBoxId.Text, out var id))
                     {
-                        var aviaoEstacionado = _aviaoEstacionadoService.GetById<AviaoEstacionado>(id);
-                        PreencheObjeto(aviaoEstacionado);
-                        _aviaoEstacionadoService.Update<AviaoEstacionado, AviaoEstacionado, AviaoEstacionadoValidator>(aviaoEstacionado);
+                        var voo = _vooService.GetById<Voo>(id);
+                        PreencheObjeto(voo);
+                        _vooService.Update<Voo, Voo, VooValidator>(voo);
                     }
                 }
                 else
                 {
-                    var aviaoEstacionado = new AviaoEstacionado();
-                    PreencheObjeto(aviaoEstacionado);
-                    _aviaoEstacionadoService.Add<AviaoEstacionado, AviaoEstacionado, AviaoEstacionadoValidator>(aviaoEstacionado);
+                    var voo = new Voo();
+                    PreencheObjeto(voo);
+                    _vooService.Add<Voo, Voo, VooValidator>(voo);
                 }
                 tabControlCadastro.SelectedIndex = 1;
             }
@@ -106,7 +120,7 @@ namespace IFSPAero.App.Forms
         {
             try
             {
-                _aviaoEstacionadoService.Delete(id);
+                _vooService.Delete(id);
             }
             catch (Exception ex)
             {
@@ -116,20 +130,24 @@ namespace IFSPAero.App.Forms
 
         protected override void CarregaGrid()
         {
-            aviaoEstacionados = _aviaoEstacionadoService.Get<AviaoEstacionadoModel>().ToList();
-            dataGridViewConsulta.DataSource = aviaoEstacionados;
-            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            voos = _vooService.Get<VooModel>().ToList();
+            dataGridViewConsulta.DataSource = voos;
             dataGridViewConsulta.Columns["IdAviao"]!.Visible = false;
-            dataGridViewConsulta.Columns["IdHangar"]!.Visible = false;
+            dataGridViewConsulta.Columns["IdAeroportoSaida"]!.Visible = false;
+            dataGridViewConsulta.Columns["IdAeroportoChegada"]!.Visible = false;
+            dataGridViewConsulta.Columns["IdTipoVoo"]!.Visible = false;
+            dataGridViewConsulta.Columns["idCapitao"]!.Visible = false;
         }
 
         protected override void CarregaRegistro(DataGridViewRow? linha)
         {
-            txtBoxDuracao.Text = linha?.Cells["Nome"].Value.ToString();
-            dateTimeComeco.Value = (DateTime)(linha?.Cells["ComecoEstacionamento"].Value);
-            dateTimeFim.Value = (DateTime)(linha?.Cells["FimEstacionamento"].Value);
+            dateTimeChegada.Value = (DateTime)(linha?.Cells["DataSaida"].Value);
+            dateTimeSaida.Value = (DateTime)(linha?.Cells["DataChegada"].Value);
             cboAviao.SelectedValue = linha?.Cells["IdAviao"].Value;
-            cboHangar.SelectedValue = linha?.Cells["IdHangar"].Value;
+            cboCapitao.SelectedValue = linha?.Cells["IdCapitao"].Value;
+            cboVoo.SelectedValue = linha?.Cells["IdTipoVoo"].Value;
+            cboAeroportoChegada.SelectedValue = linha?.Cells["IdAeroportoChegada"].Value;
+            cboAeroportoSaida.SelectedValue = linha?.Cells["IdAeroportoSaida"].Value;
         }
     }
 }

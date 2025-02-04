@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj": {}
+    "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj": {
+    "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj",
         "projectName": "IFSPAero.App",
-        "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj",
-        "packagesPath": "C:\\Users\\Cairim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.App\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.App\\IFSPAero.App.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cairim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,20 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
-                "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
+              "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
+                "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
               },
-              "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj": {
-                "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj"
+              "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj": {
+                "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj"
               },
-              "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj": {
-                "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj"
+              "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj": {
+                "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj"
               }
             }
           }
@@ -48,13 +49,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -104,24 +99,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
+    "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj",
         "projectName": "IFSPAero.Domain",
-        "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj",
-        "packagesPath": "C:\\Users\\Cairim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cairim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -130,6 +125,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -142,13 +138,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -175,24 +165,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj": {
+    "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj",
         "projectName": "IFSPAero.Repository",
-        "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj",
-        "packagesPath": "C:\\Users\\Cairim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\IFSPAero.Repository.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cairim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -201,14 +191,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
-                "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
+              "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
+                "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
               }
             }
           }
@@ -217,13 +208,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -258,24 +243,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj": {
+    "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj",
         "projectName": "IFSPAero.Service",
-        "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj",
-        "packagesPath": "C:\\Users\\Cairim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\IFSPAero.Service.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cairim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -284,14 +269,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
-                "projectPath": "C:\\Users\\Cairim\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
+              "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj": {
+                "projectPath": "C:\\Users\\usuario\\Source\\Repos\\IFSPAero\\IFSPAero.Domain\\IFSPAero.Domain.csproj"
               }
             }
           }
@@ -300,13 +286,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -337,7 +317,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

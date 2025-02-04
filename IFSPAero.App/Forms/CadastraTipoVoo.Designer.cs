@@ -39,10 +39,50 @@
             // 
             tabPageCadastro.Controls.Add(txtBoxId);
             tabPageCadastro.Controls.Add(txtBoxTipoVoo);
+            tabPageCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Padding = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Size = new Size(896, 505);
             tabPageCadastro.Controls.SetChildIndex(btnConfirmar, 0);
             tabPageCadastro.Controls.SetChildIndex(btnCancelar, 0);
             tabPageCadastro.Controls.SetChildIndex(txtBoxTipoVoo, 0);
             tabPageCadastro.Controls.SetChildIndex(txtBoxId, 0);
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(811, 453);
+            btnConfirmar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabPageConsulta
+            // 
+            tabPageConsulta.Margin = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Padding = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Size = new Size(896, 505);
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(684, 453);
+            btnCancelar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(581, 452);
+            btnExcluir.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.Location = new Point(695, 452);
+            btnAlterar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnNovo
+            // 
+            btnNovo.Location = new Point(816, 452);
+            btnNovo.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabControlCadastro
+            // 
+            tabControlCadastro.Location = new Point(3, 113);
+            tabControlCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabControlCadastro.Size = new Size(904, 538);
             // 
             // txtBoxTipoVoo
             // 
@@ -56,7 +96,8 @@
             txtBoxTipoVoo.HideSelection = true;
             txtBoxTipoVoo.Hint = "Tipo de Vôo";
             txtBoxTipoVoo.LeadingIcon = null;
-            txtBoxTipoVoo.Location = new Point(217, 153);
+            txtBoxTipoVoo.Location = new Point(248, 204);
+            txtBoxTipoVoo.Margin = new Padding(3, 4, 3, 4);
             txtBoxTipoVoo.MaxLength = 32767;
             txtBoxTipoVoo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxTipoVoo.Name = "txtBoxTipoVoo";
@@ -68,7 +109,7 @@
             txtBoxTipoVoo.SelectionLength = 0;
             txtBoxTipoVoo.SelectionStart = 0;
             txtBoxTipoVoo.ShortcutsEnabled = true;
-            txtBoxTipoVoo.Size = new Size(352, 48);
+            txtBoxTipoVoo.Size = new Size(402, 48);
             txtBoxTipoVoo.TabIndex = 3;
             txtBoxTipoVoo.TabStop = false;
             txtBoxTipoVoo.TextAlign = HorizontalAlignment.Left;
@@ -87,7 +128,8 @@
             txtBoxId.HideSelection = true;
             txtBoxId.Hint = "ID";
             txtBoxId.LeadingIcon = null;
-            txtBoxId.Location = new Point(217, 99);
+            txtBoxId.Location = new Point(248, 132);
+            txtBoxId.Margin = new Padding(3, 4, 3, 4);
             txtBoxId.MaxLength = 32767;
             txtBoxId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxId.Name = "txtBoxId";
@@ -99,7 +141,7 @@
             txtBoxId.SelectionLength = 0;
             txtBoxId.SelectionStart = 0;
             txtBoxId.ShortcutsEnabled = true;
-            txtBoxId.Size = new Size(352, 48);
+            txtBoxId.Size = new Size(402, 48);
             txtBoxId.TabIndex = 6;
             txtBoxId.TabStop = false;
             txtBoxId.TextAlign = HorizontalAlignment.Left;
@@ -108,12 +150,15 @@
             // 
             // CadastraTipoVoo
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            AutoSize = true;
+            ClientSize = new Size(910, 656);
             Location = new Point(0, 0);
+            Margin = new Padding(3, 5, 3, 5);
             Name = "CadastraTipoVoo";
-            Text = "CadastraTipoVoo";
+            Padding = new Padding(3, 113, 3, 5);
+            Text = "IFSPAero - Tipos de Vôo";
             tabPageCadastro.ResumeLayout(false);
             tabPageCadastro.PerformLayout();
             tabPageConsulta.ResumeLayout(false);

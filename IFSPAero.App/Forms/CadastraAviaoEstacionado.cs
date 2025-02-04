@@ -38,7 +38,7 @@ namespace IFSPAero.App.Forms
 
             cboHangar.ValueMember = "Id";
             cboHangar.DisplayMember = "Codigo";
-            cboAviao.DataSource = _hangarService.Get<HangarModel>().ToList();
+            cboHangar.DataSource = _hangarService.Get<HangarModel>().ToList();
 
         }
 
@@ -102,7 +102,7 @@ namespace IFSPAero.App.Forms
         {
             aviaoEstacionados = _aviaoEstacionadoService.Get<AviaoEstacionadoModel>().ToList();
             dataGridViewConsulta.DataSource = aviaoEstacionados;
-            dataGridViewConsulta.Columns["Nome"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewConsulta.Columns["DuracaoEstacionamento"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewConsulta.Columns["IdAviao"]!.Visible = false;
             dataGridViewConsulta.Columns["IdHangar"]!.Visible = false;
         }

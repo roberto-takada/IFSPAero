@@ -45,6 +45,9 @@
             tabPageCadastro.Controls.Add(txtBoxDocumento);
             tabPageCadastro.Controls.Add(txtBoxNome);
             tabPageCadastro.Controls.Add(txtBoxId);
+            tabPageCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Padding = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Size = new Size(899, 478);
             tabPageCadastro.Controls.SetChildIndex(btnConfirmar, 0);
             tabPageCadastro.Controls.SetChildIndex(btnCancelar, 0);
             tabPageCadastro.Controls.SetChildIndex(txtBoxId, 0);
@@ -52,6 +55,43 @@
             tabPageCadastro.Controls.SetChildIndex(txtBoxDocumento, 0);
             tabPageCadastro.Controls.SetChildIndex(cboFuncao, 0);
             tabPageCadastro.Controls.SetChildIndex(cboCompanhia, 0);
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(805, 385);
+            btnConfirmar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabPageConsulta
+            // 
+            tabPageConsulta.Margin = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Padding = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Size = new Size(899, 478);
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(684, 385);
+            btnCancelar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(584, 425);
+            btnExcluir.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.Location = new Point(694, 425);
+            btnAlterar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnNovo
+            // 
+            btnNovo.Location = new Point(815, 425);
+            btnNovo.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabControlCadastro
+            // 
+            tabControlCadastro.Location = new Point(3, 113);
+            tabControlCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabControlCadastro.Size = new Size(907, 511);
             // 
             // txtBoxId
             // 
@@ -65,7 +105,8 @@
             txtBoxId.HideSelection = true;
             txtBoxId.Hint = "ID";
             txtBoxId.LeadingIcon = null;
-            txtBoxId.Location = new Point(6, 6);
+            txtBoxId.Location = new Point(7, 8);
+            txtBoxId.Margin = new Padding(3, 4, 3, 4);
             txtBoxId.MaxLength = 32767;
             txtBoxId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxId.Name = "txtBoxId";
@@ -77,7 +118,7 @@
             txtBoxId.SelectionLength = 0;
             txtBoxId.SelectionStart = 0;
             txtBoxId.ShortcutsEnabled = true;
-            txtBoxId.Size = new Size(221, 48);
+            txtBoxId.Size = new Size(253, 48);
             txtBoxId.TabIndex = 6;
             txtBoxId.TabStop = false;
             txtBoxId.TextAlign = HorizontalAlignment.Left;
@@ -96,7 +137,8 @@
             txtBoxNome.HideSelection = true;
             txtBoxNome.Hint = "Nome";
             txtBoxNome.LeadingIcon = null;
-            txtBoxNome.Location = new Point(233, 6);
+            txtBoxNome.Location = new Point(266, 8);
+            txtBoxNome.Margin = new Padding(3, 4, 3, 4);
             txtBoxNome.MaxLength = 32767;
             txtBoxNome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxNome.Name = "txtBoxNome";
@@ -108,7 +150,7 @@
             txtBoxNome.SelectionLength = 0;
             txtBoxNome.SelectionStart = 0;
             txtBoxNome.ShortcutsEnabled = true;
-            txtBoxNome.Size = new Size(546, 48);
+            txtBoxNome.Size = new Size(624, 48);
             txtBoxNome.TabIndex = 7;
             txtBoxNome.TabStop = false;
             txtBoxNome.TextAlign = HorizontalAlignment.Left;
@@ -127,7 +169,8 @@
             txtBoxDocumento.HideSelection = true;
             txtBoxDocumento.Hint = "Documento";
             txtBoxDocumento.LeadingIcon = null;
-            txtBoxDocumento.Location = new Point(456, 71);
+            txtBoxDocumento.Location = new Point(521, 95);
+            txtBoxDocumento.Margin = new Padding(3, 4, 3, 4);
             txtBoxDocumento.MaxLength = 32767;
             txtBoxDocumento.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxDocumento.Name = "txtBoxDocumento";
@@ -139,7 +182,7 @@
             txtBoxDocumento.SelectionLength = 0;
             txtBoxDocumento.SelectionStart = 0;
             txtBoxDocumento.ShortcutsEnabled = true;
-            txtBoxDocumento.Size = new Size(323, 48);
+            txtBoxDocumento.Size = new Size(369, 48);
             txtBoxDocumento.TabIndex = 8;
             txtBoxDocumento.TabStop = false;
             txtBoxDocumento.TextAlign = HorizontalAlignment.Left;
@@ -161,11 +204,12 @@
             cboFuncao.Hint = "Função";
             cboFuncao.IntegralHeight = false;
             cboFuncao.ItemHeight = 43;
-            cboFuncao.Location = new Point(233, 72);
+            cboFuncao.Location = new Point(266, 96);
+            cboFuncao.Margin = new Padding(3, 4, 3, 4);
             cboFuncao.MaxDropDownItems = 4;
             cboFuncao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             cboFuncao.Name = "cboFuncao";
-            cboFuncao.Size = new Size(217, 49);
+            cboFuncao.Size = new Size(247, 49);
             cboFuncao.StartIndex = 0;
             cboFuncao.TabIndex = 10;
             // 
@@ -184,21 +228,24 @@
             cboCompanhia.Hint = "Companhia";
             cboCompanhia.IntegralHeight = false;
             cboCompanhia.ItemHeight = 43;
-            cboCompanhia.Location = new Point(6, 71);
+            cboCompanhia.Location = new Point(7, 95);
+            cboCompanhia.Margin = new Padding(3, 4, 3, 4);
             cboCompanhia.MaxDropDownItems = 4;
             cboCompanhia.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             cboCompanhia.Name = "cboCompanhia";
-            cboCompanhia.Size = new Size(221, 49);
+            cboCompanhia.Size = new Size(252, 49);
             cboCompanhia.StartIndex = 0;
             cboCompanhia.TabIndex = 11;
             // 
             // CadastraFuncionario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(913, 629);
             Location = new Point(0, 0);
+            Margin = new Padding(3, 5, 3, 5);
             Name = "CadastraFuncionario";
+            Padding = new Padding(3, 113, 3, 5);
             Text = "IFSPAero - Funcionário";
             tabPageCadastro.ResumeLayout(false);
             tabPageCadastro.PerformLayout();

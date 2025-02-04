@@ -41,11 +41,51 @@
             tabPageCadastro.Controls.Add(txtBoxId);
             tabPageCadastro.Controls.Add(cboAeroporto);
             tabPageCadastro.Controls.Add(txtBoxCodigo);
+            tabPageCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Padding = new Padding(3, 5, 3, 5);
+            tabPageCadastro.Size = new Size(890, 469);
             tabPageCadastro.Controls.SetChildIndex(btnConfirmar, 0);
             tabPageCadastro.Controls.SetChildIndex(btnCancelar, 0);
             tabPageCadastro.Controls.SetChildIndex(txtBoxCodigo, 0);
             tabPageCadastro.Controls.SetChildIndex(cboAeroporto, 0);
             tabPageCadastro.Controls.SetChildIndex(txtBoxId, 0);
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(789, 419);
+            btnConfirmar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabPageConsulta
+            // 
+            tabPageConsulta.Margin = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Padding = new Padding(3, 5, 3, 5);
+            tabPageConsulta.Size = new Size(890, 487);
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(654, 419);
+            btnCancelar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(581, 440);
+            btnExcluir.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.Location = new Point(695, 440);
+            btnAlterar.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // btnNovo
+            // 
+            btnNovo.Location = new Point(816, 440);
+            btnNovo.Margin = new Padding(6, 11, 6, 11);
+            // 
+            // tabControlCadastro
+            // 
+            tabControlCadastro.Location = new Point(3, 113);
+            tabControlCadastro.Margin = new Padding(3, 5, 3, 5);
+            tabControlCadastro.Size = new Size(898, 520);
             // 
             // txtBoxCodigo
             // 
@@ -59,7 +99,8 @@
             txtBoxCodigo.HideSelection = true;
             txtBoxCodigo.Hint = "Código";
             txtBoxCodigo.LeadingIcon = null;
-            txtBoxCodigo.Location = new Point(312, 72);
+            txtBoxCodigo.Location = new Point(357, 96);
+            txtBoxCodigo.Margin = new Padding(3, 4, 3, 4);
             txtBoxCodigo.MaxLength = 32767;
             txtBoxCodigo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxCodigo.Name = "txtBoxCodigo";
@@ -71,7 +112,7 @@
             txtBoxCodigo.SelectionLength = 0;
             txtBoxCodigo.SelectionStart = 0;
             txtBoxCodigo.ShortcutsEnabled = true;
-            txtBoxCodigo.Size = new Size(453, 48);
+            txtBoxCodigo.Size = new Size(518, 48);
             txtBoxCodigo.TabIndex = 2;
             txtBoxCodigo.TabStop = false;
             txtBoxCodigo.TextAlign = HorizontalAlignment.Left;
@@ -92,11 +133,12 @@
             cboAeroporto.FormattingEnabled = true;
             cboAeroporto.IntegralHeight = false;
             cboAeroporto.ItemHeight = 43;
-            cboAeroporto.Location = new Point(312, 17);
+            cboAeroporto.Location = new Point(357, 23);
+            cboAeroporto.Margin = new Padding(3, 4, 3, 4);
             cboAeroporto.MaxDropDownItems = 4;
             cboAeroporto.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             cboAeroporto.Name = "cboAeroporto";
-            cboAeroporto.Size = new Size(453, 49);
+            cboAeroporto.Size = new Size(517, 49);
             cboAeroporto.StartIndex = 0;
             cboAeroporto.TabIndex = 3;
             // 
@@ -112,7 +154,8 @@
             txtBoxId.HideSelection = true;
             txtBoxId.Hint = "ID";
             txtBoxId.LeadingIcon = null;
-            txtBoxId.Location = new Point(22, 18);
+            txtBoxId.Location = new Point(25, 24);
+            txtBoxId.Margin = new Padding(3, 4, 3, 4);
             txtBoxId.MaxLength = 32767;
             txtBoxId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtBoxId.Name = "txtBoxId";
@@ -124,7 +167,7 @@
             txtBoxId.SelectionLength = 0;
             txtBoxId.SelectionStart = 0;
             txtBoxId.ShortcutsEnabled = true;
-            txtBoxId.Size = new Size(284, 48);
+            txtBoxId.Size = new Size(325, 48);
             txtBoxId.TabIndex = 4;
             txtBoxId.TabStop = false;
             txtBoxId.TextAlign = HorizontalAlignment.Left;
@@ -133,12 +176,14 @@
             // 
             // CadastraHangar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(904, 638);
             Location = new Point(0, 0);
+            Margin = new Padding(3, 5, 3, 5);
             Name = "CadastraHangar";
-            Text = "CadastraHangar";
+            Padding = new Padding(3, 113, 3, 5);
+            Text = "IFSPAero - Hangar";
             tabPageCadastro.ResumeLayout(false);
             tabPageCadastro.PerformLayout();
             tabPageConsulta.ResumeLayout(false);
